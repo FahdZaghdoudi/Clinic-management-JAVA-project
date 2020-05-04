@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="647.0" style="-fx-background-color: #2D3447;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LoginController">
+   <children>
+      <Label layoutX="131.0" layoutY="42.0" text="Clinique JOKER" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="57.0" />
+         </font>
+      </Label>
+      <Label layoutX="120.0" layoutY="378.0" text="Projet &quot;Gestion de Clinique&quot; réalisé par Fahd ZAGHDOUDI  et Farouk KHOUALDIA" textFill="#b5e9ff" />
+      <ImageView fx:id="logo" fitHeight="123.0" fitWidth="102.0" layoutX="27.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/contourGrasOpt.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="123.0" fitWidth="87.0" layoutX="546.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/contourGrasOpt.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="pat" layoutX="170.0" layoutY="134.0" mnemonicParsing="false" onAction="#loginpat" prefHeight="107.0" prefWidth="166.0" stylesheets="@../CSS/ButtonHome1.css" text="Patient" textFill="WHITE">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Button>
+      <Button fx:id="med" layoutX="341.0" layoutY="134.0" mnemonicParsing="false" onAction="#loginMed" prefHeight="107.0" prefWidth="166.0" stylesheets="@../CSS/ButtonHome2.css" text="Medecin" textFill="WHITE">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Button>
+      <Button fx:id="inf" layoutX="170.0" layoutY="247.0" mnemonicParsing="false" onAction="#loginInf" prefHeight="107.0" prefWidth="166.0" stylesheets="@../CSS/ButtonHome2.css" text="Infirmier" textFill="WHITE">
+         <font>
+            <Font size="32.0" />
+         </font>
+      </Button>
+      <Button fx:id="adm" layoutX="341.0" layoutY="247.0" mnemonicParsing="false" onAction="#loginAdm" prefHeight="107.0" prefWidth="166.0" stylesheets="@../CSS/ButtonHome1.css" text="Secretaire" textFill="WHITE">
+         <font>
+            <Font size="28.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

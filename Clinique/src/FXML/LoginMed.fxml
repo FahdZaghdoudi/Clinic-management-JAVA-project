@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="647.0" style="-fx-background-color: #2D3447;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LoginController">
+   <children>
+      <Button fx:id="medBtn" layoutX="198.0" layoutY="267.0" mnemonicParsing="false" onAction="#loginActionMed" prefHeight="25.0" prefWidth="251.0" stylesheets="@../CSS/ButtonHome1.css" text="Se connecter" />
+      <TextField fx:id="login" layoutX="198.0" layoutY="180.0" prefHeight="25.0" prefWidth="251.0" promptText="Identifiant" />
+      <PasswordField fx:id="pswd" layoutX="198.0" layoutY="223.0" prefHeight="25.0" prefWidth="251.0" promptText="Mot de passe" />
+      <Label layoutX="57.0" layoutY="51.0" text="Connexion Medecin" textFill="#0095ff">
+         <font>
+            <Font name="System Bold" size="57.0" />
+         </font>
+      </Label>
+      <Label layoutX="202.0" layoutY="369.0" text="Projet &quot;Gestion de Clinique&quot; réalisé par Fahd ZAGHDOUDI  et Farouk KHOUALDIA" textFill="#b5e9ff" />
+      <ImageView fitHeight="245.0" fitWidth="209.0" layoutX="14.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/contourGrasOpt.png" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="homeImg" fitHeight="38.0" fitWidth="38.0" layoutX="600.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/home.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="homeBtn" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="600.0" layoutY="13.0" mnemonicParsing="false" onAction="#homee" opacity="0.0" prefHeight="38.0" prefWidth="38.0" />
+   </children>
+</AnchorPane>

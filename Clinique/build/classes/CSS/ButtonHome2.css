@@ -1,0 +1,11 @@
+.button
+{
+    -fx-background-color:   #2166f3;
+    -fx-background-radius: 5;
+}
+
+.button:hover
+{
+    -fx-background-color: radial-gradient(center 50% -40%, radius 200%, #1d87da 45%, #1a78c2 50%);
+    -fx-background-radius: 20;
+}

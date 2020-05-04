@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="394.0" prefWidth="647.0" style="-fx-background-color: #2D3447;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.ListerPatients">
+   <children>
+      <Label layoutX="167.0" layoutY="4.0" text="Liste des patients" textFill="#0095ff">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="202.0" layoutY="375.0" text="Projet &quot;Gestion de Clinique&quot; réalisé par Fahd ZAGHDOUDI  et Farouk KHOUALDIA" textFill="#b5e9ff" />
+      <ImageView fx:id="homeImg" fitHeight="38.0" fitWidth="38.0" layoutX="603.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/home.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="homeBtn" alignment="CENTER" contentDisplay="GRAPHIC_ONLY" layoutX="603.0" layoutY="14.0" mnemonicParsing="false" onAction="#homee" opacity="0.0" prefHeight="38.0" prefWidth="38.0" />
+      <ImageView fitHeight="38.0" fitWidth="29.0" layoutX="594.0" layoutY="324.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imgs/pdf.png" />
+         </image>
+      </ImageView>
+      <Pane layoutY="4.0" prefHeight="406.0" prefWidth="149.0" style="-fx-background-color: #282e3f;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="498.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <ImageView fitHeight="133.0" fitWidth="78.0" layoutX="70.0" layoutY="-9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../imgs/contourGrasOpt.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="ret" layoutX="13.0" layoutY="17.0" mnemonicParsing="false" onAction="#interAdm" prefHeight="51.0" prefWidth="52.0" stylesheets="@../CSS/ButtonHome1.css" text="Retour" />
+            <TextField fx:id="tel" layoutX="15.0" layoutY="220.0" prefHeight="25.0" prefWidth="120.0" promptText="Téléphone" />
+            <TextField fx:id="adr" layoutX="15.0" layoutY="253.0" prefHeight="25.0" prefWidth="120.0" promptText="Adresse" />
+            <TextField fx:id="mdp" layoutX="15.0" layoutY="285.0" prefHeight="25.0" prefWidth="120.0" promptText="Mot de passe" />
+            <TextField fx:id="ass" layoutX="15.0" layoutY="317.0" prefHeight="25.0" prefWidth="120.0" promptText="Assurance" />
+            <TextField fx:id="age" layoutX="15.0" layoutY="188.0" prefHeight="25.0" prefWidth="120.0" promptText="Age" />
+            <TextField fx:id="nom" layoutX="15.0" layoutY="122.0" prefHeight="25.0" prefWidth="120.0" promptText="Nom" />
+            <TextField fx:id="prenom" layoutX="15.0" layoutY="155.0" prefHeight="25.0" prefWidth="120.0" promptText="Prenom" />
+            <TextField fx:id="etatC" layoutX="15.0" layoutY="350.0" prefHeight="25.0" prefWidth="120.0" promptText="Etat civil" />
+            <TextField fx:id="id" layoutX="15.0" layoutY="89.0" prefHeight="25.0" prefWidth="120.0" promptText="Id" />
+         </children>
+      </Pane>
+      <TableView fx:id="tablePat" layoutX="168.0" layoutY="65.0" prefHeight="248.0" prefWidth="466.0" stylesheets="@../CSS/TablePat.css">
+         <columns>
+            <TableColumn fx:id="col_id" prefWidth="33.0" text="Id" />
+            <TableColumn fx:id="col_nom" prefWidth="66.0" text="Nom" />
+            <TableColumn fx:id="col_prenom" prefWidth="69.0" text="Prénom" />
+            <TableColumn fx:id="col_age" prefWidth="41.0" text="Age" />
+            <TableColumn fx:id="col_tel" prefWidth="68.0" text="Téléphone" />
+            <TableColumn fx:id="col_adr" prefWidth="64.0" text="Adresse" />
+            <TableColumn fx:id="col_ass" prefWidth="65.0" text="Assurance" />
+            <TableColumn fx:id="col_etat" prefWidth="59.0" text="Etat civil" />
+         </columns>
+      </TableView>
+      <Button fx:id="ajouter" layoutX="170.0" layoutY="322.0" mnemonicParsing="false" onAction="#ajouterPat" prefHeight="39.0" prefWidth="120.0" style="-fx-background-color: #1e222f;" stylesheets="@../CSS/ButtonHome2.css" text="Ajouter" textFill="WHITE">
+         <font>
+            <Font name="Book Antiqua" size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="supprimer" layoutX="294.0" layoutY="322.0" mnemonicParsing="false" onAction="#suprPat" prefHeight="39.0" prefWidth="120.0" style="-fx-background-color: #1e222f;" stylesheets="@../CSS/ButtonHome2.css" text="Supprimer" textFill="WHITE">
+         <font>
+            <Font name="Book Antiqua" size="19.0" />
+         </font>
+      </Button>
+      <Button fx:id="modifier" layoutX="418.0" layoutY="322.0" mnemonicParsing="false" onAction="#fichePat" prefHeight="39.0" prefWidth="169.0" style="-fx-background-color: #1e222f;" stylesheets="@../CSS/ButtonHome2.css" text="Génerer fiche patient" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Book Antiqua" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
